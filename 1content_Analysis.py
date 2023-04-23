@@ -4,6 +4,7 @@ import nltk
 from nltk.corpus import stopwords
 from gensim import corpora, models
 import pyLDAvis.gensim
+import matplotlib.pyplot as plt
 # Download the stopwords resource
 # nltk.download('stopwords')
 # nltk.download('punkt')
@@ -26,4 +27,5 @@ for i, topic in lda_model.show_topics(num_topics=10, num_words=10, formatted=Fal
 
 # Visualize the topics using pyLDAvis
 vis = pyLDAvis.gensim.prepare(lda_model, corpus, dictionary)
+# pyLDAvis.show(vis)
 pyLDAvis.display(vis)
