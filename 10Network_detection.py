@@ -1,5 +1,5 @@
 import pandas as pd
-final_df=pd.read_csv("/content/preprocessed_tweets_v2.csv")
+final_df=pd.read_csv("preprocessed_tweets_v2.csv")
 
 cityClass=["Mumbai","Delhi","Bengaluru South","Lucknow","Pune"]
 hashtagsClass=["LokSabhaElections2019","PMModi","Elections2019","Votekar"]
@@ -96,7 +96,7 @@ plt.show()
 
 #--------------------------------------------------ALTERNATE--------------------------------------------------
 
-temp_df=pd.read_csv("/content/preprocessed_tweets_v2.csv")
+temp_df=pd.read_csv("preprocessed_tweets_v2.csv")
 print(temp_df["Source Label"].unique())
 
 
